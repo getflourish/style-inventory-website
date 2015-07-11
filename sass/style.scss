@@ -25,18 +25,8 @@ body {
     text-decoration: none;
 	background: $yellow;
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-	font-size: 1em;
-	box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.5);
-    
-    -webkit-transition: all 0.1s ease-out;
-    &:hover {
-		-webkit-transform: scale(1.05);
-		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16), 0px 3px 13px rgba(0, 0, 0, 0.25);
-    }
-    &:active {
-		-webkit-transform: scale(1.0);
-		box-shadow: none;
-    }
+	font-size: 0.8rem;
+    text-transform: uppercase;
 
 }
 
@@ -45,6 +35,7 @@ body {
     max-width: 900px;
     width: 80%;
     text-align: center;
+    /* Rectangle 1: */
 }
 
 @media (max-width: 900px) {
@@ -71,9 +62,9 @@ body {
 
 .section-even {
     background: $lilac;
-    padding: 2em 0em 6em 0em;
+    background-image: linear-gradient(-180deg, #6F637F 0%, #594B6B 100%);
+    padding: 4rem 0rem;
     color: $white;
-    height: 400px;
 }
 
 .section-even .wrap {
@@ -86,8 +77,18 @@ hr {
     margin-bottom: 2em;
 }
 
+.col-1, .col-2 {
+    vertical-align: top;
+    padding: 0rem 2rem;
+}
+
 .col-1 {
-    float: left;
+    width: 40%;
+    display: inline-block;
+}
+.col-2 {
+    display: inline-block;
+    width: 40%;
 }
 
 ul {

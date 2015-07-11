@@ -10,10 +10,10 @@
 	-webkit-font-smoothing: antialiased;
     cursor: pointer;
     -webkit-transform: perspective(1200) translate3d(0px, 20px, -200px);
-    
+
 }
 
-.swatch:after, .card:after, .button:after {
+.swatch:after, .card:after{
     /* shadow */
 	content: "";
 	display: block;
@@ -27,7 +27,7 @@
 .swatch:hover {
     -webkit-transform: perspective(0) translateZ(0px);
     z-index: 1;
-    
+
 }
 
 .swatch1 {
@@ -72,7 +72,7 @@
 
 .color-description ul {
     font-size: 0.8em;
-	list-style-type: none; 
+	list-style-type: none;
 	padding: 0.5em;
     margin: 0;
     line-height: 1.7em;
@@ -80,7 +80,7 @@
 }
 
 .color-description li {
-	
+
 }
 .card {
     float: right;
