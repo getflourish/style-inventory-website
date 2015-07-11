@@ -1,0 +1,81 @@
+$serif: "ff-tisa-web-pro";
+$sans: "Lato", "Helvetica Neue", "Arial";
+
+body {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.title {
+	font-family: $sans;
+	font-size: 2.5em;
+	letter-spacing: 0.25em;
+	line-height: 3em;
+	text-transform: uppercase;
+    padding-left: 10px;
+
+    color: $lilac;
+
+    text-align: center;
+
+    margin-bottom: 0.8em;
+    
+  -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.subtitle {
+	font-size: 1.3em;
+	font-family: $serif;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.caption {
+
+}
+
+p {
+    color: $lilac;
+	font-size: 1.2em;
+    opacity: 0.7;
+	line-height: 1.4em;
+	font-family: $serif;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+h3 {
+    font-size: 1.75em;
+    color: $lilac;
+	font-family: $serif;
+	font-weight: bold;
+}
+
+
+.caption-small {
+	font-style: italic;
+	font-size: 1em;
+	opacity: 0.6;
+}
+
+a {
+	text-decoration: underline;
+	color: $red;
+}
+.card-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0;
+    font-family: $sans;
+}
+
+.card-caption {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: bold;
+}

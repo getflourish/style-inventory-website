@@ -1,0 +1,347 @@
+/* line 1, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch-group {
+  position: relative; }
+
+/* line 5, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch {
+  position: absolute;
+  color: #000;
+  font-size: 0.8em;
+  -webkit-transition: all 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  -webkit-transform: perspective(1200) translate3d(0px, 20px, -200px); }
+
+/* line 16, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch:after, .card:after, .button:after {
+  /* shadow */
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-filter: blur(4px); }
+
+/* line 27, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch:hover {
+  -webkit-transform: perspective(0) translateZ(0px);
+  z-index: 1; }
+
+/* line 33, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch1 {
+  top: 18%;
+  left: 55%; }
+
+/* line 38, /Users/florians/Sites/styleinventory/sass/swatches */
+.swatch2 {
+  top: 20%;
+  left: 50%; }
+
+/* line 43, /Users/florians/Sites/styleinventory/sass/swatches */
+.color-field {
+  width: 7em;
+  height: 7em;
+  text-align: right; }
+
+/* line 49, /Users/florians/Sites/styleinventory/sass/swatches */
+.color-field span {
+  display: inline-block;
+  color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
+  margin-right: 0.8em;
+  margin-top: 0.8em; }
+
+/* line 58, /Users/florians/Sites/styleinventory/sass/swatches */
+.color1 {
+  background-color: #fcb003; }
+
+/* line 62, /Users/florians/Sites/styleinventory/sass/swatches */
+.color2 {
+  background-color: #f82c48; }
+
+/* line 66, /Users/florians/Sites/styleinventory/sass/swatches */
+.color-description {
+  width: calc(7em - 2px);
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-top: none; }
+
+/* line 73, /Users/florians/Sites/styleinventory/sass/swatches */
+.color-description ul {
+  font-size: 0.8em;
+  list-style-type: none;
+  padding: 0.5em;
+  margin: 0;
+  line-height: 1.7em; }
+
+/* line 85, /Users/florians/Sites/styleinventory/sass/swatches */
+.card {
+  float: right;
+  display: inline-block;
+  display: none;
+  color: #6F6368;
+  text-align: left;
+  min-width: 12em;
+  background-image: -webkit-linear-gradient(#FFFFFF 0%, #FAFAFA 100%);
+  background-image: -o-linear-gradient(#FFFFFF 0%, #FAFAFA 100%);
+  background-image: linear-gradient(#FFFFFF 0%, #FAFAFA 100%);
+  border: 1px solid #EDEDED;
+  border-radius: 7px;
+  padding: 1em;
+  -webkit-box-sizing: border-box; }
+
+/* line 1, /Users/florians/Sites/styleinventory/sass/table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em; }
+
+/* line 6, /Users/florians/Sites/styleinventory/sass/table */
+thead tr td {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1em;
+  color: #A04C6E;
+  verticl-align: top; }
+
+/* line 14, /Users/florians/Sites/styleinventory/sass/table */
+tr td {
+  border-bottom: 1px solid #979797;
+  padding: 0.5em 0em; }
+
+/* line 19, /Users/florians/Sites/styleinventory/sass/table */
+tbody tr td {
+  border-bottom: 1px solid #CBCBCB;
+  padding: 0.5em 0em;
+  opacity: 0.7; }
+
+/* line 25, /Users/florians/Sites/styleinventory/sass/table */
+td {
+  text-align: left; }
+
+/* line 28, /Users/florians/Sites/styleinventory/sass/table */
+td.right {
+  text-align: right;
+  opacity: 0.5; }
+
+/* line 4, /Users/florians/Sites/styleinventory/sass/typography */
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 9, /Users/florians/Sites/styleinventory/sass/typography */
+.title {
+  font-family: "Lato", "Helvetica Neue", "Arial";
+  font-size: 2.5em;
+  letter-spacing: 0.25em;
+  line-height: 3em;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #6F637F;
+  text-align: center;
+  margin-bottom: 0.8em;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn; }
+
+/* line 27, /Users/florians/Sites/styleinventory/sass/typography */
+.subtitle {
+  font-size: 1.3em;
+  font-family: "ff-tisa-web-pro";
+  margin-top: 0em;
+  margin-bottom: 2em;
+  text-align: center; }
+
+/* line 39, /Users/florians/Sites/styleinventory/sass/typography */
+p {
+  color: #6F637F;
+  font-size: 1.2em;
+  opacity: 0.7;
+  line-height: 1.4em;
+  font-family: "ff-tisa-web-pro";
+  text-align: left; }
+
+/* line 48, /Users/florians/Sites/styleinventory/sass/typography */
+h2 {
+  font-size: 1.25em; }
+
+/* line 51, /Users/florians/Sites/styleinventory/sass/typography */
+h3 {
+  font-size: 1.75em;
+  color: #6F637F;
+  font-family: "ff-tisa-web-pro";
+  font-weight: bold; }
+
+/* line 59, /Users/florians/Sites/styleinventory/sass/typography */
+.caption-small {
+  font-style: italic;
+  font-size: 1em;
+  opacity: 0.6; }
+
+/* line 65, /Users/florians/Sites/styleinventory/sass/typography */
+a {
+  text-decoration: underline;
+  color: #F82C48; }
+
+/* line 69, /Users/florians/Sites/styleinventory/sass/typography */
+.card-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin: 0;
+  font-family: "Lato", "Helvetica Neue", "Arial"; }
+
+/* line 77, /Users/florians/Sites/styleinventory/sass/typography */
+.card-caption {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-weight: bold; }
+
+/* line 6, /Users/florians/Sites/styleinventory/sass/style.scss */
+body {
+  margin: 0 auto;
+  font-family: "Lato", "Helvetica Neue", "Arial";
+  -webkit-box-sizing: border-box; }
+
+/* line 12, /Users/florians/Sites/styleinventory/sass/style.scss */
+.block {
+  display: block; }
+
+/* line 16, /Users/florians/Sites/styleinventory/sass/style.scss */
+.button {
+  margin-bottom: 2em;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0em 2em;
+  line-height: 3em;
+  height: 3em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background: #FCB003;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.1s ease-out; }
+  /* line 32, /Users/florians/Sites/styleinventory/sass/style.scss */
+  .button:hover {
+    -webkit-transform: scale(1.05);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16), 0px 3px 13px rgba(0, 0, 0, 0.25); }
+  /* line 36, /Users/florians/Sites/styleinventory/sass/style.scss */
+  .button:active {
+    -webkit-transform: scale(1);
+    box-shadow: none; }
+
+/* line 43, /Users/florians/Sites/styleinventory/sass/style.scss */
+.wrap {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
+  text-align: center; }
+
+@media (max-width: 900px) {
+  /* line 51, /Users/florians/Sites/styleinventory/sass/style.scss */
+  .wrap {
+    width: auto;
+    margin: 0em 2em; }
+ }
+
+/* line 58, /Users/florians/Sites/styleinventory/sass/style.scss */
+.funky-header {
+  background: #a04c6e;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #a04c6e 0%, #a04c6e 20%, #eff2be 20%, #eff2be 20%, #eff2be 40%, #fcb003 40%, #fcb003 60%, #6f6368 60%, #6f6368 80%, #f82c48 80%, #f82c48 99%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #a04c6e), color-stop(20%, #a04c6e), color-stop(20%, #eff2be), color-stop(20%, #eff2be), color-stop(40%, #eff2be), color-stop(40%, #fcb003), color-stop(60%, #fcb003), color-stop(60%, #6f6368), color-stop(80%, #6f6368), color-stop(80%, #f82c48), color-stop(99%, #f82c48));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #a04c6e 0%, #a04c6e 20%, #eff2be 20%, #eff2be 20%, #eff2be 40%, #fcb003 40%, #fcb003 60%, #6f6368 60%, #6f6368 80%, #f82c48 80%, #f82c48 99%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #a04c6e 0%, #a04c6e 20%, #eff2be 20%, #eff2be 20%, #eff2be 40%, #fcb003 40%, #fcb003 60%, #6f6368 60%, #6f6368 80%, #f82c48 80%, #f82c48 99%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #a04c6e 0%, #a04c6e 20%, #eff2be 20%, #eff2be 20%, #eff2be 40%, #fcb003 40%, #fcb003 60%, #6f6368 60%, #6f6368 80%, #f82c48 80%, #f82c48 99%);
+  /* IE10+ */
+  background: linear-gradient(to right, #a04c6e 0%, #a04c6e 20%, #eff2be 20%, #eff2be 20%, #eff2be 40%, #fcb003 40%, #fcb003 60%, #6f6368 60%, #6f6368 80%, #f82c48 80%, #f82c48 99%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a04c6e', endColorstr='#f82c48',GradientType=1 );
+  min-height: 6px;
+  width: 100%; }
+
+/* line 72, /Users/florians/Sites/styleinventory/sass/style.scss */
+.section-even {
+  background: #6F637F;
+  padding: 2em 0em 6em 0em;
+  color: #FFFFFF;
+  height: 400px; }
+
+/* line 79, /Users/florians/Sites/styleinventory/sass/style.scss */
+.section-even .wrap {
+  margin: 0 auto; }
+
+/* line 82, /Users/florians/Sites/styleinventory/sass/style.scss */
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 1em;
+  margin-bottom: 2em; }
+
+/* line 89, /Users/florians/Sites/styleinventory/sass/style.scss */
+.col-1 {
+  float: left; }
+
+/* line 93, /Users/florians/Sites/styleinventory/sass/style.scss */
+ul {
+  text-align: left; }
+
+/* line 97, /Users/florians/Sites/styleinventory/sass/style.scss */
+.selection {
+  display: inline-block;
+  border: 1px solid #D2D2D2;
+  line-height: 1em;
+  position: relative; }
+
+/* line 104, /Users/florians/Sites/styleinventory/sass/style.scss */
+.handle {
+  content: ' ';
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  position: absolute;
+  background-image: -webkit-linear-gradient(#FDFDFD 0%, #DCDCDC 100%);
+  background-image: -o-linear-gradient(#FDFDFD 0%, #DCDCDC 100%);
+  background-image: linear-gradient(#FDFDFD 0%, #DCDCDC 100%);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.4), 0px 1px 1px 0px rgba(0, 0, 0, 0.4); }
+
+/* line 116, /Users/florians/Sites/styleinventory/sass/style.scss */
+.hero {
+  margin-bottom: 1.5em; }
+
+/* line 120, /Users/florians/Sites/styleinventory/sass/style.scss */
+section {
+  margin: 0 auto 6em auto;
+  text-align: center;
+  width: 40em; }
+
+/* line 126, /Users/florians/Sites/styleinventory/sass/style.scss */
+.full-width {
+  width: 100%; }
+
+/* line 129, /Users/florians/Sites/styleinventory/sass/style.scss */
+.intro {
+  background-image: url('ps_neutral_@2X.png');
+  width: 100%;
+  padding: 100px 0; }
+
+/* line 135, /Users/florians/Sites/styleinventory/sass/style.scss */
+.shortcut {
+  border: 4px solid #bcb5c6;
+  border-radius: 10px;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  line-height: 2em;
+  color: #bcb5c6;
+  margin: 0 0.15em; }
+
+/*# sourceMappingURL=style.css.map */
